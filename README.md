@@ -21,7 +21,7 @@ The most common patterns at Easy and Medium levels include:
 
 ## How to use
 
-Each exercise should be solved without consulting the answer key. Answer keys are provided at the end of each module file. 
+Each exercise should be solved without consulting the answer key. Answer keys are provided for each module file. 
 Progression to the next block is recommended only after the current one can be solved independently.
 
 ## Structure
