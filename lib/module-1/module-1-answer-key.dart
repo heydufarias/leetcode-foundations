@@ -1,6 +1,6 @@
 // Module 1 - Answer Key
 
-// 1 — Walk through the list
+// Exercise 1 — Walk through the list
 // void main() {
 //   List<int> list = [10, 20, 30, 40, 50];
 //   int i = 0;
@@ -10,14 +10,14 @@
 //   }
 // }
 
-// 2 — Access specific position
+// Exercise 2 — Access specific position
 // void main() {
 //   List<int> list = [10, 20, 30, 40, 50];
 //   int i = 2;
 //   print(list[i]); // 30
 // }
 
-// 3 — Last two elements
+// Exercise 3 — Last two elements
 // void main() {
 //   List<int> list = [10, 20, 30, 40, 50];
 //   int i = 3;
@@ -27,7 +27,7 @@
 //   }
 // }
 
-// 4 — Reverse order
+// Exercise 4 — Reverse order
 // void main() {
 //   List<int> list = [10, 20, 30, 40, 50];
 //   int i = list.length - 1;
@@ -37,7 +37,7 @@
 //   }
 // }
 
-// 5 — Step by two
+// Exercise 5 — Step by two
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5, 6, 7, 8];
 //   int i = 0;
@@ -47,7 +47,7 @@
 //   }
 // }
 
-// 6 — Stop on condition
+// Exercise 6 — Stop on condition
 // void main() {
 //   List<int> list = [3, 7, 2, 9, 4];
 //   int i = 0;
@@ -60,7 +60,7 @@
 //   }
 // }
 
-// 7 — Stop before printing
+// Exercise 7 — Stop before printing
 // void main() {
 //   List<int> list = [3, 7, 2, 9, 4];
 //   int i = 0;
@@ -71,7 +71,7 @@
 //   }
 // }
 
-// 8 — Stop by accumulated sum
+// Exercise 8 — Stop by accumulated sum
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5];
 //   int i = 0;
@@ -87,7 +87,7 @@
 //   }
 // }
 
-// 9 — Store index, not value
+// Exercise 9 — Store index, not value
 // void main() {
 //   List<int> list = [5, 10, 15, 20, 25];
 //   int i = 0;
@@ -100,7 +100,7 @@
 //   }
 // }
 
-// 10 — Stop or finish with message
+// Exercise 10 — Stop or finish with message
 // void main() {
 //   List<int> list = [2, 4, 6, 7, 10];
 //   int i = 0;
@@ -116,7 +116,7 @@
 //   if (!found) print('all even list');
 // }
 
-// 11 — Track max
+// Exercise 11 — Track max
 // void main() {
 //   List<int> list = [3, 7, 2, 9, 1];
 //   int i = 0;
@@ -128,7 +128,7 @@
 //   print(max); // 9
 // }
 
-// 12 — Track min
+// Exercise 12 — Track min
 // void main() {
 //   List<int> list = [3, 7, 2, 9, 1];
 //   int i = 0;
@@ -140,7 +140,7 @@
 //   print(min); // 1
 // }
 
-// 13 — Filter into new list
+// Exercise 13 — Filter into new list
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5];
 //   List<int> result = [];
@@ -152,7 +152,7 @@
 //   print(result); // [3, 4, 5]
 // }
 
-// 14 — Transform into new list
+// Exercise 14 — Transform into new list
 // void main() {
 //   List<int> list = [10, 20, 30, 40, 50];
 //   List<int> result = [];
@@ -164,7 +164,7 @@
 //   print(result); // [1, 2, 3, 4, 5]
 // }
 
-// 15 — Split into two lists
+// Exercise 15 — Split into two lists
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5, 6];
 //   List<int> even = [];
@@ -182,7 +182,7 @@
 //   print(odd);    // [1, 3, 5]
 // }
 
-// 16 — Index of max
+// Exercise 16 — Index of max
 // void main() {
 //   List<int> list = [4, 2, 9, 1, 7];
 //   int i = 0;
@@ -194,7 +194,7 @@
 //   print(maxIndex); // 2
 // }
 
-// 17 — Index of min
+// Exercise 17 — Index of min
 // void main() {
 //   List<int> list = [4, 2, 9, 1, 7];
 //   int i = 0;
@@ -206,7 +206,7 @@
 //   print(minIndex); // 3
 // }
 
-// 18 — First even index
+// Exercise 18 — First even index
 // void main() {
 //   List<int> list = [1, 3, 5, 2, 4];
 //   int i = 0;
@@ -221,7 +221,7 @@
 //   print(evenIndex); // 3
 // }
 
-// 19 — Last occurrence index
+// Exercise 19 — Last occurrence index
 // void main() {
 //   List<int> list = [10, 20, 30, 20, 10];
 //   int i = 0;
@@ -233,7 +233,7 @@
 //   print(lastIndex); // 3
 // }
 
-// 20 — Manual search
+// Exercise 20 — Manual search
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5];
 //   int i = 0;
@@ -248,7 +248,7 @@
 //   print(index); // 2
 // }
 
-// 21 — Conditional jump (Greater than 5)
+// Exercise 21 — Conditional jump (Greater than 5)
 // void main() {
 //   List<int> list = [1, 10, 2, 3, 8, 4, 1, 1];
 //   int i = 0;
@@ -262,7 +262,7 @@
 //   }
 // }
 
-// 22 — Triple jump when value found
+// Exercise 22 — Triple jump when value found
 // void main() {
 //   List<int> list = [0, 0, 1, 0, 0, 1, 0];
 //   int i = 0;
@@ -276,7 +276,7 @@
 //   }
 // }
 
-// 23 — Conditional jump (Multiple of 3)
+// Exercise 23 — Conditional jump (Multiple of 3)
 // void main() {
 //   List<int> list = [2, 4, 6, 8, 10];
 //   int i = 0;
@@ -290,7 +290,7 @@
 //   }
 // }
 
-// 24 — Dynamic movement (Even vs Odd)
+// Exercise 24 — Dynamic movement (Even vs Odd)
 // void main() {
 //   List<int> list = [5, 2, 10, 1, 1, 20, 3];
 //   int i = 0;
@@ -304,7 +304,7 @@
 //   }
 // }
 
-// 25 — Conditional double increment
+// Exercise 25 — Conditional double increment
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5];
 //   int i = 0;
@@ -315,7 +315,7 @@
 //   }
 // }
 
-// 26 — Compare with next (Greater)
+// Exercise 26 — Compare with next (Greater)
 // void main() {
 //   List<int> list = [10, 20, 15, 30, 25];
 //   int i = 0;
@@ -327,7 +327,7 @@
 //   }
 // }
 
-// 27 — Adjacent duplicates
+// Exercise 27 — Adjacent duplicates
 // void main() {
 //   List<int> list = [1, 2, 3, 3, 4, 5, 5];
 //   int i = 0;
@@ -339,7 +339,7 @@
 //   }
 // }
 
-// 28 — Sum with previous
+// Exercise 28 — Sum with previous
 // void main() {
 //   List<int> list = [5, 10, 8, 12, 7];
 //   int i = 1;
@@ -349,7 +349,7 @@
 //   }
 // }
 
-// 29 — Check ascending order
+// Exercise 29 — Check ascending order
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5];
 //   int i = 0;
@@ -364,7 +364,7 @@
 //   print(isSorted ? 'Ok' : 'Error');
 // }
 
-// 30 — Peak element
+// Exercise 30 — Peak element
 // void main() {
 //   List<int> list = [10, 5, 20, 15, 30];
 //   int i = 1;
@@ -376,7 +376,7 @@
 //   }
 // }
 
-// 31 — Sum of consecutive pairs
+// Exercise 31 — Sum of consecutive pairs
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5, 6];
 //   int i = 0;
@@ -386,7 +386,7 @@
 //   }
 // }
 
-// 32 — Average of consecutive triples
+// Exercise 32 — Average of consecutive triples
 // void main() {
 //   List<int> list = [10, 20, 30, 40, 50, 60];
 //   int i = 0;
@@ -396,7 +396,7 @@
 //   }
 // }
 
-// 33 — Max between current and next
+// Exercise 33 — Max between current and next
 // void main() {
 //   List<int> list = [1, 5, 2, 8, 3];
 //   int i = 0;
@@ -410,7 +410,7 @@
 //   }
 // }
 
-// 34 — Multiply with index gap
+// Exercise 34 — Multiply with index gap
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5];
 //   int i = 0;
@@ -420,7 +420,7 @@
 //   }
 // }
 
-// 35 — Adjacent equality check
+// Exercise 35 — Adjacent equality check
 // void main() {
 //   List<int> list = [2, 2, 3, 4, 4, 5];
 //   int i = 0;
@@ -430,7 +430,7 @@
 //   }
 // }
 
-// 36 — Triple sum
+// Exercise 36 — Triple sum
 // void main() {
 //   List<int> list = [1, 2, 1, 2, 1];
 //   int i = 0;
@@ -440,7 +440,7 @@
 //   }
 // }
 
-// 37 — Check sequence difference
+// Exercise 37 — Check sequence difference
 // void main() {
 //   List<int> list = [10, 11, 12, 13];
 //   int i = 0;
@@ -452,7 +452,7 @@
 //   print(status);
 // }
 
-// 38 — Descending comparison
+// Exercise 38 — Descending comparison
 // void main() {
 //   List<int> list = [5, 4, 3, 2, 1];
 //   int i = 0;
@@ -462,7 +462,7 @@
 //   }
 // }
 
-// 39 — Pair as string
+// Exercise 39 — Pair as string
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5, 6];
 //   int i = 0;
@@ -472,7 +472,7 @@
 //   }
 // }
 
-// 40 — Subtraction next - current
+// Exercise 40 — Subtraction next - current
 // void main() {
 //   List<int> list = [100, 200, 300, 400];
 //   int i = 0;
@@ -482,7 +482,7 @@
 //   }
 // }
 
-// 41 — In-place multiplication
+// Exercise 41 — In-place multiplication
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5];
 //   int i = 0;
@@ -493,7 +493,7 @@
 //   print(list);
 // }
 
-// 42 — In-place subtraction
+// Exercise 42 — In-place subtraction
 // void main() {
 //   List<int> list = [10, 20, 30, 40, 50];
 //   int i = 0;
@@ -504,7 +504,7 @@
 //   print(list);
 // }
 
-// 43 — Replace zeros
+// Exercise 43 — Replace zeros
 // void main() {
 //   List<int> list = [0, 1, 0, 3, 12];
 //   int i = 0;
@@ -515,7 +515,7 @@
 //   print(list);
 // }
 
-// 44 — Zero even numbers
+// Exercise 44 — Zero even numbers
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5, 6];
 //   int i = 0;
@@ -526,7 +526,7 @@
 //   print(list);
 // }
 
-// 45 — Binary mapping
+// Exercise 45 — Binary mapping
 // void main() {
 //   List<int> list = [5, 9, 2, 8];
 //   int i = 0;
@@ -537,7 +537,7 @@
 //   print(list);
 // }
 
-// 46 — Square in-place
+// Exercise 46 — Square in-place
 // void main() {
 //   List<int> list = [1, 2, 3, 4];
 //   int i = 0;
@@ -548,7 +548,7 @@
 //   print(list);
 // }
 
-// 47 — Uppercase in-place
+// Exercise 47 — Uppercase in-place
 // void main() {
 //   List<String> list = ["a", "b", "c"];
 //   int i = 0;
@@ -559,7 +559,7 @@
 //   print(list);
 // }
 
-// 48 — Round in-place
+// Exercise 48 — Round in-place
 // void main() {
 //   List<double> list = [1.5, 2.5, 3.5];
 //   int i = 0;
@@ -570,7 +570,7 @@
 //   print(list);
 // }
 
-// 49 — Absolute value in-place
+// Exercise 49 — Absolute value in-place
 // void main() {
 //   List<int> list = [10, -20, 30, -40];
 //   int i = 0;
@@ -581,7 +581,7 @@
 //   print(list);
 // }
 
-// 50 — Modify by index
+// Exercise 50 — Modify by index
 // void main() {
 //   List<int> list = [1, 2, 3, 4, 5];
 //   int i = 0;
