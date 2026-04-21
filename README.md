@@ -26,18 +26,19 @@ Progression to the next block is recommended only after the current one can be s
 
 ## Structure
 
-### Module 1 - Single Pointer
-- Block 1.1 - Moving
-- Block 1.2 - Stopping
-- Block 1.3 - Decision
-- Block 1.4 - Position memory
-- Block 1.5 - Conditional jumps
-- Block 1.6 - Relational
-- Block 1.7 - Fixed window
-- Block 1.8 - In-place
+### Module 1 — Single Pointer
+- Block 1.1 — Moving the pointer
+- Block 1.2 — Stopping the pointer
+- Block 1.3 — Making a decision while moving
+- Block 1.4 — The pointer as position memory
+- Block 1.5 — Conditional jump
+- Block 1.6 — Compare with neighbor using i + 1
+- Block 1.7 — Operating on windows of fixed size
+- Block 1.8 — Writing back into the list (in-place)
 
-### Module 2 - Two Pointers
-- Block 2.1 - Same direction, same pace
-- Block 2.2 - Opposite directions
-- Block 2.3 - Same direction, different speeds (fast & slow)
-- Block 2.4 - One fixed, one moving (anchor and explorer)
+### Module 2 — Two Pointers
+- Block 2.1 — Same direction, same pace
+- Block 2.2 — Opposite directions
+- Block 2.3 — Same direction, different speeds (fast & slow)
+- Block 2.4 — One fixed, one moving (anchor and explorer)
+- Block 2.5 — Grouping and sequence compression
