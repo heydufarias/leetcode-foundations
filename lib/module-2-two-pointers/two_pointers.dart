@@ -1,5 +1,10 @@
 void main() {
   print(
+    "\n********************************************************************************************************************************************************** ",
+  );
+  print("Block 2.1 — Same direction, same pace");
+
+  print(
     "\nExercise 1 - Given the list [1, 2, 3, 4, 5], use i = 0 and j = 1. While j < list.length, print the pair (list[i], list[j]) and advance both. You are looking at side-by-side neighbors.",
   );
   {
@@ -99,78 +104,68 @@ void main() {
   }
 
   print(
-    '\nExercise 7 - Given the list [2, 2, 3, 3, 4, 5, 5], use i and j. Create a result list without adjacent duplicates. Rule: only add list[i] to the result if it is different from list[j]. (Tip: when they are equal, only j advances.)',
+    '\nExercise 7 - Given the list [1, 2, 3, 4, 5, 6], use i = 0 and j = 1. While j < list.length, compute the sum list[i] + list[j]. If the sum is even, print the pair. Advance both at the end of each iteration.',
   );
+  {
+    List<int> list = [1, 2, 3, 4, 5, 6];
+    int i = 0;
+    int j = 1;
+
+    while (j < list.length) {
+      if ((list[i] + list[j]) % 2 == 0) print("${list[i]}, ${list[j]}");
+      i++;
+      j++;
+    }
+  }
 
   print(
-    '\nExercise 8 - Given the list [1, 2, 3, 4, 5, 6], use i = 0 and j = 1. While j < list.length, compute the sum list[i] + list[j]. If the sum is even, print the pair. Advance both at the end of each iteration.',
+    '\nExercise 8 - Given the list [1, 4, 2, 5, 3, 6], use i = 0 and j = 1. While j < list.length, print the pair only when list[j] is greater than list[i] by more than 2. Advance both at the end of each iteration.',
   );
+  {
+    List<int> list = [1, 4, 2, 5, 3, 6];
+    int i = 0;
+    int j = 1;
+
+    while (j < list.length) {
+      if ((list[j] - list[i]) > 2) print("${list[i]}, ${list[j]}");
+      i++;
+      j++;
+    }
+  }
 
   print(
-    '\nExercise 9 - Given the list [1, 2, 3, 4, 5], set i = 0 and j = list.length - 1. While i < j, print the pair (list[i], list[j]) and advance both (i++, j--).',
+    '\nExercise 9 - Given the list [1, 2, 3, 4, 5, 6, 7, 8], use i = 0 and j = 3 (three steps ahead). While j < list.length, compute the product list[i] * list[j] and print it. Advance both at the end of each iteration.',
   );
+  {
+    List<int> list = [1, 2, 3, 4, 5, 6, 7, 8];
+    int i = 0;
+    int j = 3;
+
+    while (j < list.length) {
+      print(list[i] * list[j]);
+      i++;
+      j++;
+    }
+  }
 
   print(
-    '\nExercise 10 - Given the list [1, 2, 3, 2, 1], use the same logic. For each pair (list[i], list[j]), check if they are equal. If all pairs are equal, the list is a palindrome. Print the result.',
+    '\nExercise 10 - Given the list [2, 4, 6, 8, 10], use i = 0 and j = 1. While j < list.length, check if list[j] - list[i] is always the same value. If it is, print "constant gap". If at any point it differs, print "gap changed at position j". Advance both at the end of each iteration.',
   );
+  {
+    List<int> list = [2, 4, 6, 8, 10];
+    int i = 0;
+    int j = 1;
+    int gap = list[j] - list[i];
+    bool isConstantGap = true;
 
-  print(
-    '\nExercise 11 - Given the list [1, 2, 3, 4, 5], use i = 0 and j = list.length - 1. While i < j, sum list[i] + list[j]. If the sum is 6, print the pair and stop. If the sum is greater than 6, move j--. If it is smaller, move i++.',
-  );
-
-  print(
-    '\nExercise 12 - Given the list [1, 3, 5, 7, 9], use opposite pointers. While i < j, compare list[i] with list[j]. If list[i] + list[j] > 8, move j back. If it is smaller, move i forward. If it is equal to 8, print the pair and move both.',
-  );
-
-  print(
-    '\nExercise 13 - Given the list [1, 2, 3, 4, 5], use i = 0 and j = list.length - 1. While i < j, swap the values in place: list[i] goes where list[j] was and vice versa. Move both pointers. Print the list at the end.',
-  );
-
-  print(
-    '\nExercise 14 - Given the unordered list [2, 7, 3, 1, 5], use opposite pointers. While i < j, sum the extremes. If the sum is greater than 6, print "pair found: (list[i], list[j])" and move both. Otherwise, move only i.',
-  );
-
-  print(
-    '\nExercise 15 - Given the list [1, 2, 3, 4, 5, 6], use opposite pointers. While i < j, compute the product list[i] * list[j]. Keep track of the maximum product found. Print it at the end.',
-  );
-
-  print(
-    '\nExercise 16 - Given the list [1, 2, 3, 4, 5], set i = 0 and j = 0. At each iteration, move i by 1 and j by 2. While j < list.length, print the values of list[i] and list[j]. Observe where each pointer ends up when the loop finishes.',
-  );
-
-  print(
-    '\nExercise 17 - Given the list [1, 2, 3, 4, 5, 6], use the same pattern. When the loop ends, print list[i]. For an even-sized list, i will be at the first element of the second half. For an odd-sized list, it will be exactly in the middle. Test this with different list sizes.',
-  );
-
-  print(
-    '\nExercise 18 - Given the list [1, 2, 3, 4, 5], use i = 0 (slow) and j = 0 (fast). Move j by 2 each step. When j reaches the end, i will be in the middle. Print the middle element without using division or list.length ~/ 2. You found the middle using pointers.',
-  );
-
-  print(
-    '\nExercise 19 - Given the list [3, 1, 4, 1, 5, 9, 2, 6], use slow i and fast j. While j < list.length, check if list[i] == list[j]. If so, print "non-adjacent duplicate found" and stop. Move j by 2 and i by 1.',
-  );
-
-  print(
-    '\nExercise 20 - Given the list [1, 2, 3, 4, 5, 6, 7, 8], use i = 0 and j = 1. At each step, move j by 2 and i by 1. While j < list.length, sum list[i] + list[j]. At the end, print the largest sum found. You are comparing a middle element with the one two steps ahead.',
-  );
-
-  print(
-    '\nExercise 21 - Given the list [1, 2, 3, 4, 5], keep i fixed at 0. Let j go from i + 1 to the end. Print all pairs (list[i], list[j]). Then move i and repeat. You are seeing all possible pair combinations.',
-  );
-
-  print(
-    '\nExercise 22 - Same list. Same logic. But now count how many pairs (list[i], list[j]) have a sum equal to 6. Print the total count at the end.',
-  );
-
-  print(
-    '\nExercise 23 - Given the list [3, 1, 4, 2, 5], use i as anchor and j as explorer. For each i, find the smallest value from list[i+1] to the end using j. Print the pair (list[i], smallest_ahead).',
-  );
-
-  print(
-    '\nExercise 24 - Given the list [1, 2, 3, 4, 5], use i as the start of a window and j as the end. Start with i = 0 and j = 2 (window size 3). Compute the sum of elements inside the window list[i] + list[i+1] + list[j]. Move both pointers together. Print each window sum.',
-  );
-
-  print(
-    '\nExercise 25 - Given the list [2, 1, 5, 1, 3, 2], use i = 0 and j = 0. Expand j until the sum of list[i..j] exceeds 5. When it does, print the window size j - i + 1 and move i forward. Continue until j reaches the end. You are practicing a variable-size sliding window.',
-  );
+    while (j < list.length) {
+      if (gap != (list[j] - list[i])) {
+        isConstantGap = false;
+        break;
+      }
+      i++;
+      j++;
+    }
+    print(isConstantGap ? "constant gap" : "gap changed at position $j");
+  }
 }
