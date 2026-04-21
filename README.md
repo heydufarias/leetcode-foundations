@@ -37,7 +37,7 @@ Progression to the next block is recommended only after the current one can be s
 - Block 1.8 - In-place
 
 ### Module 2 - Two Pointers
-- Block 2.1 - Same direction
+- Block 2.1 - Same direction, same pace
 - Block 2.2 - Opposite directions
-- Block 2.3 - Fast & slow
-- Block 2.4 - Anchor & explorer
+- Block 2.3 - Same direction, different speeds (fast & slow)
+- Block 2.4 - One fixed, one moving (anchor and explorer)
