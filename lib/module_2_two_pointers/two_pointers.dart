@@ -281,20 +281,89 @@ void main() {
   print(
     '\nExercise 16 - Given the unordered list [2, 7, 3, 1, 5], use opposite pointers. While i < j, sum the extremes. If the sum is greater than 6, print "pair found: (list[i], list[j])" and move both. Otherwise, move only i.',
   );
+  {
+    List<int> list = [2, 7, 3, 1, 5];
+    int i = 0;
+    int j = list.length - 1;
+
+    while (i < j) {
+      int sum = list[i] + list[j];
+
+      if (sum > 6) {
+        print("pair found: ${list[i]}, ${list[j]}");
+        i++;
+        j--;
+      } else {
+        i++;
+      }
+    }
+  }
 
   print(
     '\nExercise 17 - Given the list [1, 2, 3, 4, 5, 6], use opposite pointers. While i < j, compute the product list[i] * list[j]. Keep track of the maximum product found. Print it at the end.',
   );
+  {
+    List<int> list = [1, 2, 3, 4, 5, 6];
+    int i = 0;
+    int j = list.length - 1;
+    int maxProduct = 0;
+
+    while (i < j) {
+      int product = list[i] * list[j];
+      if (product > maxProduct) maxProduct = product;
+      i++;
+      j--;
+    }
+
+    print(maxProduct);
+  }
 
   print(
     '\nExercise 18 - Given the list [1, 2, 3, 4, 5, 6], use i = 0 and j = list.length - 1. While i < j, compute list[j] - list[i]. Keep track of the maximum difference found. Print it at the end.',
   );
+  {
+    List<int> list = [1, 2, 3, 4, 5, 6];
+    int i = 0;
+    int j = list.length - 1;
+    int maxDiff = 0;
+
+    while (i < j) {
+      int diff = list[j] - list[i];
+      if (diff > maxDiff) maxDiff = diff;
+      i++;
+      j--;
+    }
+
+    print(maxDiff);
+  }
 
   print(
     '\nExercise 19 - Given the list [3, 1, 4, 1, 5, 9], use i = 0 and j = list.length - 1. While i < j, if list[i] + list[j] is even, print the pair. Always advance both pointers.',
   );
+  {
+    List<int> list = [3, 1, 4, 1, 5, 9];
+    int i = 0;
+    int j = list.length - 1;
+
+    while (i < j) {
+      if ((list[i] + list[j]) % 2 == 0) print("${list[i]}, ${list[j]}");
+      i++;
+      j--;
+    }
+  }
 
   print(
     '\nExercise 20 - Given the list [1, 2, 3, 4, 5], use i = 0 and j = list.length - 1. While i < j, compute list[i] * list[i] + list[j] * list[j].  Print the result at each step. Advance both pointers.',
   );
+  {
+    List<int> list = [1, 2, 3, 4, 5];
+    int i = 0;
+    int j = list.length - 1;
+
+    while (i < j) {
+      print(list[i] * list[i] + list[j] * list[j]);
+      i++;
+      j--;
+    }
+  }
 }
