@@ -366,4 +366,77 @@ void main() {
       j--;
     }
   }
+
+  print(
+    "\n********************************************************************************************************************************************************** ",
+  );
+  print("Block 2.3 — Same direction, different speeds (fast & slow)");
+
+  print(
+    "\nExercise 21 - Given the list [1, 2, 3, 4, 5], set i = 0 and j = 0. At each iteration, move i by 1 and j by 2. While j < list.length, print the values of list[i] and list[j]. Observe where each pointer ends up when the loop finishes.",
+  );
+  {
+    List<int> list = [1, 2, 3, 4, 5];
+    int i = 0;
+    int j = 0;
+
+    while (j < list.length) {
+      print("i: ${list[i]}, j:${list[j]}");
+
+      i++;
+      j += 2;
+    }
+  }
+
+  print(
+    "\nExercise 22 - Given the list [1, 2, 3, 4, 5, 6], use the same pattern. When the loop ends, print list[i]. For an even-sized list, i will be at the first element of the second half. For an odd-sized list, it will be exactly in the middle. Test this with different list sizes.",
+  );
+  {
+    List<int> evenList = [1, 2, 3, 4, 5, 6];
+    int i = 0;
+    int j = 0;
+
+    while (j < evenList.length) {
+      i++;
+      j += 2;
+    }
+
+    print("i: ${evenList[i]}");
+
+    // WRONG
+
+    // List<int> oddList = [1, 2, 3, 4, 5];
+    // int m = 0;
+    // int n = 0;
+
+    // while (n < oddList.length) {
+    //   m++;
+    //   n += 2;
+    // }
+
+    // print("m: ${oddList[m]}");
+    List<int> oddList = [1, 2, 3, 4, 5];
+    int m = 0;
+    int n = 0;
+
+    while (n < oddList.length) {
+      print("m: ${oddList[m]}, n:${oddList[n]}");
+      m++;
+      n += 2;
+    }
+
+    print("m: ${oddList[m - 1]}");
+  }
+
+  print(
+    "\nExercise 23 - Given the list [1, 2, 3, 4, 5], use i = 0 (slow) and j = 0 (fast). Move j by 2 each step. When j reaches the end, i will be in the middle. Print the middle element without using division or list.length ~/ 2. You found the middle using pointers.",
+  );
+
+  print(
+    "\nExercise 24 - Given the list [3, 1, 4, 1, 5, 9, 2, 6], use slow i and fast j. While j < list.length, check if list[i] == list[j]. If so, print \"non-adjacent duplicate found\" and stop. Move j by 2 and i by 1.",
+  );
+
+  print(
+    "\nExercise 25 - Given the list [1, 2, 3, 4, 5, 6, 7, 8], use i = 0 and j = 1. At each step, move j by 2 and i by 1. While j < list.length, sum list[i] + list[j]. At the end, print the largest sum found.",
+  );
 }
