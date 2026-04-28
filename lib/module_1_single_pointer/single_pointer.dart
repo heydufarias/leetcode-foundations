@@ -243,4 +243,108 @@ void main() {
     print("even: $evenList");
     print("odd: $oddList");
   }
+
+  print(
+    "\n**********************************************************************************************************************************************************",
+  );
+  print("Block 1.4 — The pointer as position memory");
+
+  print(
+    "\nExercise 16 - Given the list [4, 2, 9, 1, 7], find the index of the largest element.",
+  );
+  {
+    // List<int> list = [4, 2, 9, 1, 7];
+    // int i = 0;
+    // int maxValue = 0;
+    // int indexMaxValue = 0;
+
+    // while (i < list.length) {
+    //   if (list[i] > maxValue) {
+    //     maxValue = list[i];
+    //     indexMaxValue = i;
+    //   }
+    //   i++;
+    // }
+
+    // print(indexMaxValue);
+
+    List<int> list = [4, 2, 9, 1, 7];
+    int i = 0;
+    int maxIndex = 0;
+
+    while (i < list.length) {
+      if (list[i] > list[maxIndex]) maxIndex = i;
+      i++;
+    }
+
+    print(maxIndex);
+  }
+
+  print("\nExercise 17 - Same list. Find the index of the smallest element.");
+  {
+    List<int> list = [4, 2, 9, 1, 7];
+    int i = 0;
+    int minIndex = 0;
+
+    while (i < list.length) {
+      if (list[i] < list[minIndex]) minIndex = i;
+      i++;
+    }
+
+    print(minIndex);
+  }
+
+  print(
+    "\nExercise 18 - Given the list [1, 3, 5, 2, 4], iterate and store the index of the first even number found. Print that index at the end.",
+  );
+  {
+    List<int> list = [1, 3, 5, 2, 4];
+    int i = 0;
+    int evenIndex = -1;
+
+    while (i < list.length) {
+      if (list[i] % 2 == 0) {
+        evenIndex = i;
+        break;
+      }
+      i++;
+    }
+
+    print(evenIndex);
+  }
+
+  print(
+    "\nExercise 19 - Given the list [10, 20, 30, 20, 10], iterate and store the index of the last occurrence of 20. Print that index. Tip: do not stop when you find it — keep going and update the stored index each time.",
+  );
+  {
+    List<int> list = [10, 20, 30, 20, 10];
+    int i = 0;
+    int resultIndex = -1;
+
+    while (i < list.length) {
+      if (list[i] == 20) resultIndex = i;
+      i++;
+    }
+
+    print(resultIndex);
+  }
+
+  print(
+    "\nExercise 20 - Given the list [1, 2, 3, 4, 5], iterate and check if the value 3 exists in the list. If it does, print its index. If it does not, print -1. Do not use .contains() or .indexOf().",
+  );
+  {
+    List<int> list = [1, 2, 3, 4, 5];
+    int i = 0;
+    int resultIndex = -1;
+
+    while (i < list.length) {
+      if (list[i] == 3) {
+        resultIndex = i;
+        break;
+      }
+      i++;
+    }
+
+    print(resultIndex);
+  }
 }
