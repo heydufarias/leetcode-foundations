@@ -347,4 +347,170 @@ void main() {
 
     print(resultIndex);
   }
+
+  print(
+    "\n********************************************************************************************************************************************************** ",
+  );
+  print("Block 1.5 — Conditional jump");
+
+  print(
+    "\nExercise 21 - Given the list [1, 10, 2, 3, 8, 4, 1, 6], print each element. If the current element is greater than 5, skip the next one by advancing i by 2. Otherwise advance by 1.",
+  );
+  {
+    List<int> list = [1, 10, 2, 3, 8, 4, 1, 1];
+    int i = 0;
+
+    while (i < list.length) {
+      print(list[i]);
+      if (list[i] > 5) {
+        i += 2;
+      } else {
+        i++;
+      }
+    }
+  }
+
+  print(
+    "\nExercise 22 - Given the list [0, 0, 1, 0, 0, 1, 0], print each element. If the current element is 1, skip the next two by advancing i by 3. Otherwise advance by 1.",
+  );
+  {
+    List<int> list = [0, 0, 1, 0, 0, 1, 0];
+    int i = 0;
+
+    while (i < list.length) {
+      print(list[i]);
+      if (list[i] == 1) {
+        i += 3;
+      } else {
+        i++;
+      }
+    }
+  }
+
+  print(
+    "\nExercise 23 - Given the list [2, 4, 6, 8, 10], print each element. If the current element is a multiple of 3, skip one index by advancing i by 2. Otherwise advance by 1.",
+  );
+  {
+    List<int> list = [2, 4, 6, 8, 10];
+    int i = 0;
+
+    while (i < list.length) {
+      print(list[i]);
+      if (list[i] % 3 == 0) {
+        i += 2;
+      } else {
+        i++;
+      }
+    }
+  }
+
+  print(
+    "\nExercise 24 - Given the list [5, 2, 10, 1, 1, 20, 3], print each element. If the current element is even, advance i by 1. If it is odd, advance i by 3.",
+  );
+  {
+    List<int> list = [5, 2, 10, 1, 1, 20, 3];
+    int i = 0;
+
+    while (i < list.length) {
+      print(list[i]);
+      if (list[i] % 2 == 0) {
+        i++;
+      } else {
+        i += 3;
+      }
+    }
+  }
+
+  print(
+    "\nExercise 25 - Given the list [1, 2, 3, 4, 5], print each element. If the current element is 3, advance i by 2 (an extra increment). Otherwise advance by 1.",
+  );
+  {
+    List<int> list = [1, 2, 3, 4, 5];
+    int i = 0;
+
+    while (i < list.length) {
+      print(list[i]);
+      if (list[i] == 3) {
+        i += 2;
+      } else {
+        i++;
+      }
+    }
+  }
+
+  print(
+    "\n********************************************************************************************************************************************************** ",
+  );
+  print("Block 1.6 — Compare with neighbor using i + 1");
+
+  print(
+    "\nExercise 26 - Given the list [10, 20, 15, 30, 25], iterate while i < list.length - 1. Print list[i] only when it is greater than list[i + 1].",
+  );
+  {
+    List<int> list = [10, 20, 15, 30, 25];
+    int i = 0;
+
+    while (i < list.length - 1) {
+      if (list[i] > list[i + 1]) print(list[i]);
+      i++;
+    }
+  }
+
+  print(
+    "\nExercise 27 - Given the list [1, 2, 3, 3, 4, 5, 5], iterate while i < list.length - 1. Print the index i whenever list[i] == list[i + 1]. You are finding adjacent duplicates.",
+  );
+  {
+    List<int> list = [1, 2, 3, 3, 4, 5, 5];
+    int i = 0;
+
+    while (i < list.length - 1) {
+      if (list[i] == list[i + 1]) print(i);
+      i++;
+    }
+  }
+
+  print(
+    "\nExercise 28 - Given the list [5, 10, 8, 12, 7], iterate starting at i = 1. At each step, print list[i] + list[i - 1]. You are summing each element with the one before it.",
+  );
+  {
+    List<int> list = [5, 10, 8, 12, 7];
+    int i = 1;
+
+    while (i < list.length) {
+      print(list[i] + list[i - 1]);
+      i++;
+    }
+  }
+
+  print(
+    "\nExercise 29 - Given the list [1, 2, 3, 4, 5], check if the list is sorted in ascending order. Iterate while i < list.length - 1. If you find list[i] > list[i + 1] at any point, print \"not sorted\" and stop. If the loop finishes without finding one, print \"sorted\".",
+  );
+  {
+    List<int> list = [1, 2, 3, 4, 5];
+    int i = 0;
+    bool isSorted = true;
+
+    while (i < list.length - 1) {
+      if (list[i] > list[i + 1]) {
+        isSorted = false;
+        break;
+      }
+      i++;
+    }
+
+    print(isSorted ? "sorted" : "not sorted");
+  }
+
+  print(
+    "\nExercise 30 - Given the list [10, 5, 20, 15, 30], find all peak elements. A peak is an element greater than both its neighbors. Iterate from i = 1 to list.length - 2 and print each peak.",
+  );
+  {
+    List<int> list = [10, 5, 20, 15, 30];
+    int i = 1;
+
+    while (i < list.length - 2) {
+      if (list[i] > list[i - 1] && list[i] > list[i + 1]) print(list[i]);
+      i++;
+    }
+  }
 }
