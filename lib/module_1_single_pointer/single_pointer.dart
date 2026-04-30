@@ -513,4 +513,158 @@ void main() {
       i++;
     }
   }
+
+  print(
+    "\n********************************************************************************************************************************************************** ",
+  );
+  print("Block 1.7 — Operating on windows of fixed size");
+
+  print(
+    "\nExercise 31 - Given the list [1, 2, 3, 4, 5, 6], iterate while i < list.length - 1. At each step, print the sum of list[i] + list[i + 1].",
+  );
+  {
+    List<int> list = [1, 2, 3, 4, 5, 6];
+    int i = 0;
+
+    while (i < list.length - 1) {
+      print(list[i] + list[i + 1]);
+      i++;
+    }
+  }
+
+  print(
+    "\nExercise 32 - Given the list [10, 20, 30, 40, 50, 60], iterate while i < list.length - 2. At each step, print the average of list[i], list[i + 1], and list[i + 2].",
+  );
+  {
+    List<int> list = [10, 20, 30, 40, 50, 60];
+    int i = 0;
+
+    while (i < list.length - 2) {
+      print((list[i + 2] + list[i + 1] + list[i]) ~/ 3);
+      i++;
+    }
+  }
+
+  print(
+    "\nExercise 33 - Given the list [1, 5, 2, 8, 3], iterate while i < list.length - 1. At each step, print the larger of list[i] and list[i + 1].",
+  );
+  {
+    List<int> list = [1, 5, 2, 8, 3];
+    int i = 0;
+
+    while (i < list.length - 1) {
+      if (list[i] > list[i + 1]) {
+        print(list[i]);
+      } else {
+        print(list[i + 1]);
+      }
+      i++;
+    }
+  }
+
+  print(
+    "\nExercise 34 - Given the list [1, 2, 3, 4, 5], iterate while i < list.length - 2. At each step, print the product of list[i] * list[i + 2].",
+  );
+  {
+    List<int> list = [1, 2, 3, 4, 5];
+    int i = 0;
+
+    while (i < list.length - 2) {
+      print(list[i] * list[i + 2]);
+      i++;
+    }
+  }
+
+  print(
+    "\nExercise 35 - Given the list [2, 2, 3, 4, 4, 5], iterate while i < list.length - 1. At each step, if list[i] == list[i + 1], print \"pair\".",
+  );
+  {
+    List<int> list = [2, 2, 3, 4, 4, 5];
+    int i = 0;
+
+    while (i < list.length - 1) {
+      if (list[i] == list[i + 1]) print("pair");
+      i++;
+    }
+  }
+
+  print(
+    "\nExercise 36 - Given the list [1, 2, 1, 2, 1], iterate while i < list.length - 2. At each step, print the sum of list[i] + list[i + 1] + list[i + 2].",
+  );
+  {}
+
+  print(
+    "\nExercise 37 - Given the list [10, 11, 12, 13], check if every consecutive pair has a difference of exactly 1. Iterate while i < list.length - 1. If at any point list[i + 1] - list[i] != 1, print \"not sequential\" and stop. If the loop finishes without finding one, print \"sequential\".",
+  );
+  {}
+
+  print(
+    "\nExercise 38 - Given the list [5, 4, 3, 2, 1], iterate while i < list.length - 1. At each step, print whether list[i] > list[i + 1]. Print true or false.",
+  );
+  {}
+
+  print(
+    "\nExercise 39 - Given the list [1, 2, 3, 4, 5, 6], iterate while i < list.length - 1. At each step, print the pair as a string in the format \"list[i]-list[i+1]\".",
+  );
+  {}
+
+  print(
+    "\nExercise 40 - Given the list [100, 200, 300, 400], iterate while i < list.length - 1. At each step, print list[i + 1] - list[i].",
+  );
+  {}
+
+  print(
+    "\n********************************************************************************************************************************************************** ",
+  );
+  print("Block 1.8 — Writing back into the list (in-place)");
+
+  print(
+    "\nExercise 41 - Given the list [1, 2, 3, 4, 5], multiply each element by 2 in place. Print the list at the end.",
+  );
+  {}
+
+  print(
+    "\nExercise 42 - Given the list [10, 20, 30, 40, 50], subtract 5 from each element in place. Print the list at the end.",
+  );
+  {}
+
+  print(
+    "\nExercise 43 - Given the list [0, 1, 0, 3, 12], replace every 0 with -1 in place. Print the list at the end.",
+  );
+  {}
+
+  print(
+    "\nExercise 44 - Given the list [1, 2, 3, 4, 5, 6], replace every even number with 0 in place. Print the list at the end.",
+  );
+  {}
+
+  print(
+    "\nExercise 45 - Given the list [5, 9, 2, 8], replace each element with 1 if it is greater than 5, or 0 otherwise. Do this in place. Print the list at the end.",
+  );
+  {}
+
+  print(
+    "\nExercise 46 - Given the list [1, 2, 3, 4], replace each element with its square in place. Print the list at the end.",
+  );
+  {}
+
+  print(
+    "\nExercise 47 - Given the list [\"a\", \"b\", \"c\"], convert each element to uppercase in place. Print the list at the end.",
+  );
+  {}
+
+  print(
+    "\nExercise 48 - Given the list [1.5, 2.5, 3.5], round each element in place using .roundToDouble(). Print the list at the end.",
+  );
+  {}
+
+  print(
+    "\nExercise 49 - Given the list [10, -20, 30, -40], replace every negative number with its absolute value in place. Print the list at the end.",
+  );
+  {}
+
+  print(
+    "\nExercise 50 - Given the list [1, 2, 3, 4, 5], set every element at an even index to 0 in place. Print the list at the end.",
+  );
+  {}
 }
